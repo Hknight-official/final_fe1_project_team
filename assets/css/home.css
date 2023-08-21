@@ -1,0 +1,130 @@
+/*
+######################
+css home by hknight
+#####################
+*/
+a {
+    text-decoration: none;
+}
+
+:root {
+    --gap-width: 26px;
+    --card-width: 400px;
+}
+@media screen and (min-width: 600px) {
+    --gap-width: 16px;
+    .bxh-app {
+        padding-left: 40px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .list-item > .item-app {
+        --card-width: 280px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .section-bxh-app {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 1296px;
+    }
+}
+
+.bxh-app {
+    position: relative;
+    display: flex;
+    gap: var(--gap-width);
+    padding: calc(var(--gap-width)/2) 0;
+    overflow-x: scroll;
+}
+.bxh-app > .list-item {
+    padding-left: calc(var(--gap-width)/2);
+    margin-right: calc(var(--gap-width)/2*-1);
+    flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+.item-app:hover{
+    background: #dbdbdb;
+}
+
+.list-item > .item-app {
+    display: flex;
+    flex-direction: column;
+    width: var(--card-width);
+    border-radius: 8px;
+    box-shadow: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+}
+.item-app > .app-struct {
+    margin: 0 calc(var(--gap-width)/2*-1);
+    padding: 0 calc(var(--gap-width)/2);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    box-sizing: border-box;
+}
+.app-struct > a {
+    display: flex;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    outline: none;
+}
+.app-struct > a > .top {
+    color: rgb(95,99,104);
+    fill: rgb(95,99,104);
+    stop-color: rgb(95,99,104);
+    font-size: .875rem;
+    font-weight: 400;
+    letter-spacing: .0142857143em;
+    line-height: 1.25rem;
+    font-family: Roboto,Helvetica,Arial,sans-serif;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    -webkit-box-flex: 0;
+    flex: 0 0 24px;
+    flex-direction: column;
+    margin: 34px 8px 0 0;
+}
+.app-struct > a > .detail-app {
+    column-gap: 16px;
+    display: grid;
+    grid-template-columns: max-content auto;
+    margin: 16px 0;
+}
+.detail-app > img {
+    border-radius: 12px;
+    border-width: 0;
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.3), 0 1px 3px 1px rgba(60,64,67,.15);
+    height: 56px;
+    width: 56px;
+    background-size: contain;
+}
+.detail-app > .detail-app-info {
+    display: grid;
+    grid-template-rows: max-content;
+    height: fit-content;
+    row-gap: 2px;
+}
+.detail-app-info > span {
+    color: rgb(32,33,36);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    letter-spacing: -.2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+}
