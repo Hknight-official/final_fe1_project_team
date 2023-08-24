@@ -2,6 +2,19 @@
 .General{
     font-family: "Google Sans",Roboto,Arial,sans-serif;
 }
+@media only screen and (min-width:768px) {
+    .category_button {
+        margin: 0 15%;
+    }
+
+    .section-bxh-app {
+        margin: 0 15%;
+    }
+
+    #category-list, #footer {
+        margin: 0 15%;
+    }
+}
 /*DESKTOP*/
 @media only screen and (min-width:768px){
     .search > img, .help > img{
@@ -309,6 +322,7 @@
 css home by hknight
 #####################
 */
+
 a {
     text-decoration: none;
 }
@@ -435,9 +449,10 @@ a {
     display: inline-block;
 }
 /* Quoc Huy's code */
-body {
-    padding: 0 15%;
-}
+/*body {*/
+/*    padding: 0 15%;*/
+/*}*/
+
 .category-item {
     user-select: none;
     margin-top: 40px;
