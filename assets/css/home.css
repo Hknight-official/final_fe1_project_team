@@ -1,3 +1,309 @@
+/*VIET*/
+.General{
+    font-family: "Google Sans",Roboto,Arial,sans-serif;
+}
+/*DESKTOP*/
+@media only screen and (min-width:768px){
+    .search > img, .help > img{
+        width: 25px;
+        height: 25px;
+        margin-right: 8px;
+    }
+    svg{
+        width:40px;
+    }
+    .web_name{
+        display: flex;
+    }
+    .name{
+        position: relative;
+        top:7px;
+        left:5px;
+        font-size: 150%;
+        font-weight: 550;
+        color:rgb(95,99,104);
+        text-decoration: none;
+    }
+    .NavBar{
+        display: flex;
+        position: sticky;
+        flex-wrap: wrap;
+        top:0;
+    }
+    .main_nav{
+        position: relative;
+        margin-top: 7px;
+    }
+    div > a{
+        font-size: 100%;
+        font-weight: bold;
+        padding:5px;
+        margin-left: 30px;
+        color:rgb(95,99,104);
+        text-decoration: none;
+        transition: color 500ms;
+        position: relative;
+        top: 3px;
+        display: inline-block;
+        overflow:visible;
+    }
+    .nav_button a:hover{
+        text-decoration: underline;
+        text-underline-position: under;
+  }
+  .button button{
+      border:none;
+      background: none;
+      cursor:pointer;
+  }
+  .category_button{
+      display: flex;
+  }
+  .category_button button{
+      border-radius: 50px  50px;
+      width: 120px;
+      height:30px;
+      border-style:ridge;
+      font-weight: bold;
+      margin: 40px 10px;
+      background: white;
+      transition: color 300ms;
+      cursor: pointer;
+  }
+  .category_button button:hover{
+      background: rgb(206, 206, 206);
+  }
+  .category_button button:active{
+      background-color: rgb(165, 230, 168);
+      color:#056449;
+  }
+  .button{
+      display: flex;
+      position: absolute;
+      right:0;
+      top:12px;
+      background-color: white;
+      outline:none;
+      overflow:visible;
+  }
+  .search:hover{
+      background-color: rgb(237, 237, 237);
+      border-radius: 50%;
+  }
+  .search:active{
+      background-color: rgb(136, 135, 135);
+  }
+  .help:hover{
+      background-color: rgb(237, 237, 237);
+      border-radius: 50%;
+  }
+  .help:active{
+      background-color: rgb(136, 135, 135);
+  }
+
+
+}
+/*PHONE*/
+@media only screen and (width < 600px){
+    img{
+        width:25px;
+
+    }
+    svg{
+        width:40px;
+    }
+    .web_name{
+        display: flex;
+    }
+    .name{
+        position: relative;
+        top:7px;
+        left:5px;
+        font-size: 150%;
+        font-weight: 550;
+        color:rgb(95,99,104);
+        text-decoration: none;
+    }
+    .main_nav{
+        position: relative;
+    }
+    .nav_button{
+        position:fixed;
+        left:0px;
+        display: flex;
+        bottom:0;
+        background-color: rgb(255, 255, 255);
+        gap:25px;
+        font-size:100%;
+        /*padding-right:100px;*/
+        height:60px;
+        z-index: 1;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        border-top:solid 1px grey;
+    }
+    div > a{
+        text-decoration: none;
+        color:rgb(95,99,104);
+        font-weight: bold;
+        transition: color 500ms;
+    }
+    div > a:hover{
+        color:#056449;
+    }
+    .button{
+        display: flex;
+        position: absolute;
+        right:0;
+        top:12px;
+        background-color: white;
+        outline:none;
+        overflow:hidden;
+    }
+    .button button{
+        border:none;
+        background: none;
+        cursor: pointer;
+    }
+    .search:hover{
+        background-color: rgb(237, 237, 237);
+        border-radius: 50%;
+    }
+    .search:active{
+        background-color: rgb(136, 135, 135);
+    }
+    .help:hover{
+        background-color: rgb(237, 237, 237);
+        border-radius: 50%;
+    }
+    .help:active{
+        background-color: rgb(136, 135, 135);
+    }
+    .category_button{
+        overflow-x: auto;
+        white-space: nowrap;
+
+    }
+    .category_button button{
+        border-radius: 50px  50px;
+        width: 120px;
+        height:30px;
+        border:1px ridge grey;
+        margin: 40px 10px;
+        background: white;
+        color:rgb(95,99,104);
+        font-weight: bold;
+        transition: color 500ms;
+        cursor: pointer;
+    }
+    .category_button button:hover{
+        background-color: rgb(165, 230, 168);
+        font-weight: bold;
+        color:#056449;
+    }
+
+}
+/*Tablet*/
+@media only screen and (768px > width > 600px) {
+    img{
+        width:25px;
+
+    }
+    svg{
+        width:40px;
+    }
+    .web_name{
+        display: flex;
+    }
+    .name{
+        position: relative;
+        top:7px;
+        left:5px;
+        font-size: 150%;
+        font-weight: 550;
+        color:rgb(95,99,104);
+        text-decoration: none;
+    }
+    .main_nav{
+        position: relative;
+    }
+    .nav_button{
+        position:fixed;
+        left:0px;
+        display: flex;
+        bottom:0;
+        background-color: rgb(255, 255, 255);
+        gap:25px;
+        font-size:100%;
+        padding-right:100px;
+        height:60px;
+        width:100%;
+        justify-content: center;
+        align-items: center;
+        border-top:solid 1px grey;
+    }
+    div > a{
+        text-decoration: none;
+        color:rgb(95,99,104);
+        font-weight: bold;
+        transition: color 500ms;
+    }
+    div > a:hover{
+        color:#056449;
+    }
+    .button{
+        display: flex;
+        position: absolute;
+        right:0;
+        top:12px;
+        background-color: white;
+        outline:none;
+        overflow:hidden;
+    }
+    .button button{
+        border:none;
+        background: none;
+        cursor:pointer;
+    }
+    .search:hover{
+        background-color: rgb(237, 237, 237);
+        border-radius: 50%;
+    }
+    .search:active{
+        background-color: rgb(136, 135, 135);
+    }
+    .help:hover{
+        background-color: rgb(237, 237, 237);
+        border-radius: 50%;
+    }
+    .help:active{
+        background-color: rgb(136, 135, 135);
+    }
+    .category_button{
+        overflow-x: auto;
+        white-space: nowrap;
+
+    }
+    .category_button button{
+        border-radius: 50px  50px;
+        width: 120px;
+        height:30px;
+        border:1px ridge grey;
+        margin: 40px 10px;
+        background: white;
+        color:rgb(95,99,104);
+        font-weight: bold;
+        transition: color 500ms;
+        cursor:pointer;
+    }
+    .category_button button:hover{
+        font-weight: bold;
+        background-color: rgb(165, 230, 168);
+        color:#056449;
+    }
+}
+/*VIET*/
 /*
 ######################
 css home by hknight
