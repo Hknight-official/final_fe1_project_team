@@ -4,9 +4,10 @@
 }
 /*DESKTOP*/
 @media only screen and (min-width:768px){
-    img{
+    .search > img, .help > img{
         width: 25px;
         height: 25px;
+        margin-right: 8px;
     }
     svg{
         width:40px;
@@ -29,6 +30,10 @@
         flex-wrap: wrap;
         top:0;
     }
+    .main_nav{
+        position: relative;
+        margin-top: 7px;
+    }
     div > a{
         font-size: 100%;
         font-weight: bold;
@@ -45,7 +50,7 @@
     .nav_button a:hover{
         text-decoration: underline;
         text-underline-position: under;
-  }   
+  }
   .button button{
       border:none;
       background: none;
@@ -95,8 +100,8 @@
   .help:active{
       background-color: rgb(136, 135, 135);
   }
-  
-  
+
+
 }
 /*PHONE*/
 @media only screen and (width < 600px){
@@ -130,8 +135,9 @@
         background-color: rgb(255, 255, 255);
         gap:25px;
         font-size:100%;
-        padding-right:100px;
+        /*padding-right:100px;*/
         height:60px;
+        z-index: 1;
         width:100%;
         justify-content: center;
         align-items: center;
@@ -144,7 +150,7 @@
         transition: color 500ms;
     }
     div > a:hover{
-        color:#056449; 
+        color:#056449;
     }
     .button{
         display: flex;
@@ -177,7 +183,7 @@
     .category_button{
         overflow-x: auto;
         white-space: nowrap;
-        
+
     }
     .category_button button{
         border-radius: 50px  50px;
@@ -196,7 +202,7 @@
         font-weight: bold;
         color:#056449;
     }
-    
+
 }
 /*Tablet*/
 @media only screen and (768px > width > 600px) {
@@ -244,7 +250,7 @@
         transition: color 500ms;
     }
     div > a:hover{
-        color:#056449; 
+        color:#056449;
     }
     .button{
         display: flex;
@@ -277,7 +283,7 @@
     .category_button{
         overflow-x: auto;
         white-space: nowrap;
-        
+
     }
     .category_button button{
         border-radius: 50px  50px;
@@ -295,7 +301,7 @@
         font-weight: bold;
         background-color: rgb(165, 230, 168);
         color:#056449;
-    }    
+    }
 }
 /*VIET*/
 /*
