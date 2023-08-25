@@ -1,3 +1,16 @@
+@media only screen and (min-width:768px) {
+    .category_button {
+        margin: 0 15%;
+    }
+
+    .section-bxh-app {
+        margin: 0 15%;
+    }
+
+    #category-list, #footer {
+        margin: 0 15%;
+    }
+}
 /*VIET*/
 .General{
     font-family: "Google Sans",Roboto,Arial,sans-serif;
@@ -50,56 +63,56 @@
     .nav_button a:hover{
         text-decoration: underline;
         text-underline-position: under;
-  }
-  .button button{
-      border:none;
-      background: none;
-      cursor:pointer;
-  }
-  .category_button{
-      display: flex;
-  }
-  .category_button button{
-      border-radius: 50px  50px;
-      width: 120px;
-      height:30px;
-      border-style:ridge;
-      font-weight: bold;
-      margin: 40px 10px;
-      background: white;
-      transition: color 300ms;
-      cursor: pointer;
-  }
-  .category_button button:hover{
-      background: rgb(206, 206, 206);
-  }
-  .category_button button:active{
-      background-color: rgb(165, 230, 168);
-      color:#056449;
-  }
-  .button{
-      display: flex;
-      position: absolute;
-      right:0;
-      top:12px;
-      background-color: white;
-      outline:none;
-      overflow:visible;
-  }
-  .search:hover{
-      background-color: rgb(237, 237, 237);
-      border-radius: 50%;
-  }
-  .search:active{
-      background-color: rgb(136, 135, 135);
-  }
-  .help:hover{
-      background-color: rgb(237, 237, 237);
-      border-radius: 50%;
-  }
-  .help:active{
-      background-color: rgb(136, 135, 135);
-  }
+    }
+    .button button{
+        border:none;
+        background: none;
+        cursor:pointer;
+    }
+    .category_button{
+        display: flex;
+    }
+    .category_button button{
+        border-radius: 50px  50px;
+        width: 120px;
+        height:30px;
+        border-style:ridge;
+        font-weight: bold;
+        margin: 40px 10px;
+        background: white;
+        transition: color 300ms;
+        cursor: pointer;
+    }
+    .category_button button:hover{
+        background: rgb(206, 206, 206);
+    }
+    .category_button button:active{
+        background-color: rgb(165, 230, 168);
+        color:#056449;
+    }
+    .button{
+        display: flex;
+        position: absolute;
+        right:0;
+        top:12px;
+        background-color: white;
+        outline:none;
+        overflow:visible;
+    }
+    .search:hover{
+        background-color: rgb(237, 237, 237);
+        border-radius: 50%;
+    }
+    .search:active{
+        background-color: rgb(136, 135, 135);
+    }
+    .help:hover{
+        background-color: rgb(237, 237, 237);
+        border-radius: 50%;
+    }
+    .help:active{
+        background-color: rgb(136, 135, 135);
+    }
 
 
 }
@@ -435,9 +448,9 @@ a {
     display: inline-block;
 }
 /* Quoc Huy's code */
-body {
-    padding: 0 15%;
-}
+/*body {*/
+/*    padding: 0 15%;*/
+/*}*/
 .category-item {
     user-select: none;
     margin-top: 40px;
