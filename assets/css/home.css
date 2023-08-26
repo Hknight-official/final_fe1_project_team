@@ -15,6 +15,12 @@
 .General{
     font-family: "Google Sans",Roboto,Arial,sans-serif;
 }
+.web_name,.nav_button {
+    margin: 10px
+}
+.button {
+    margin:10px
+}
 /*DESKTOP*/
 @media only screen and (min-width:768px){
     .search > img, .help > img{
@@ -47,7 +53,7 @@
         position: relative;
         margin-top: 7px;
     }
-    div > a{
+    .nav_btn{
         font-size: 100%;
         font-weight: bold;
         padding:5px;
@@ -156,13 +162,13 @@
         align-items: center;
         border-top:solid 1px grey;
     }
-    div > a{
+    .nav_btn{
         text-decoration: none;
         color:rgb(95,99,104);
         font-weight: bold;
         transition: color 500ms;
     }
-    div > a:hover{
+    .nav_btn:hover{
         color:#056449;
     }
     .button{
@@ -256,13 +262,13 @@
         align-items: center;
         border-top:solid 1px grey;
     }
-    div > a{
+    .nav_btn{
         text-decoration: none;
         color:rgb(95,99,104);
         font-weight: bold;
         transition: color 500ms;
     }
-    div > a:hover{
+    .nav_btn:hover{
         color:#056449;
     }
     .button{
@@ -520,6 +526,8 @@ a {
     width: 33%;
     padding: 15px 10px;
     border-radius: 10px;
+    text-decoration: none;
+    color:black;
 }
 .game-item:hover {
     background: #F5F5F5;
