@@ -661,11 +661,10 @@ a {
     color: #01875f;
 }
 @media screen
-and (min-width: 320px)
 and (max-width: 768px) {
-    body {
-        padding: 0 5%;
-    }
+    #category-list, #footer {
+        margin: 0 5%;
+      }
     .category-item {
         margin-top: 60px;
     }
@@ -687,9 +686,9 @@ and (max-width: 768px) {
 @media screen
 and (min-width: 768px)
 and (max-width: 1200px) {
-    body {
-        padding: 0 5%;
-    }
+    #category-list, #footer {
+        margin: 0 5%;
+      }
     .category-item {
         margin-top: 60px;
     }
